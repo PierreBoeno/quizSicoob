@@ -11,7 +11,7 @@ let startScreen = document.querySelector(".start-screen");
 let startButton = document.getElementById("start-button");
 let questionCount;
 let scoreCount = 0;
-let count = 11;
+let count = 60;
 let countdown;
 
 //Questions and Options array
@@ -19,18 +19,60 @@ let countdown;
 const quizArray = [
   {
     id: "0",
-    question: "Which is the most widely spoken language in the world?",
-    options: ["Spanish", "Mandarin", "English", "German"],
-    correct: "Mandarin",
+    question: "O que é phishing?",
+    options: ["Um tipo de peixe.", "Uma técnica de pesca.", "Uma tentativa de fraude online para obter informações pessoais.", "Uma forma de jardinagem."],
+    correct: "Uma tentativa de fraude online para obter informações pessoais.", 
   },
   {
     id: "1",
-    question: "Which is the only continent in the world without a desert?",
-    options: ["North America", "Asia", "Africa", "Europe"],
-    correct: "Europe",
+    question: "Qual é a melhor maneira de proteger suas informações financeiras online??",
+    options: ["Compartilhá-las em redes sociais.", "Manter senhas simples.", "Usar autenticação de dois fatores.", "Guardar as informações em um papel escrito."],
+    correct: "Usar autenticação de dois fatores.",
   },
   {
     id: "2",
+    question: "Who invented Computer?",
+    options: ["Charles Babbage", "Henry Luce", "Henry Babbage", "Charles Luce"],
+    correct: "Charles Babbage",
+  },
+  {
+    id: "3",
+    question: "Who invented Computer?",
+    options: ["Charles Babbage", "Henry Luce", "Henry Babbage", "Charles Luce"],
+    correct: "Charles Babbage",
+  },
+  {
+    id: "4",
+    question: "Who invented Computer?",
+    options: ["Charles Babbage", "Henry Luce", "Henry Babbage", "Charles Luce"],
+    correct: "Charles Babbage",
+  },
+  {
+    id: "5",
+    question: "Who invented Computer?",
+    options: ["Charles Babbage", "Henry Luce", "Henry Babbage", "Charles Luce"],
+    correct: "Charles Babbage",
+  },
+  {
+    id: "6",
+    question: "Who invented Computer?",
+    options: ["Charles Babbage", "Henry Luce", "Henry Babbage", "Charles Luce"],
+    correct: "Charles Babbage",
+  },
+  {
+    id: "7",
+    question: "Who invented Computer?",
+    options: ["Charles Babbage", "Henry Luce", "Henry Babbage", "Charles Luce"],
+    correct: "Charles Babbage",
+  },
+  {
+    id: "8",
+    question: "Who invented Computer?",
+    options: ["Charles Babbage", "Henry Luce", "Henry Babbage", "Charles Luce"],
+    correct: "Charles Babbage",
+  },
+  {
+    id: "9",
     question: "Who invented Computer?",
     options: ["Charles Babbage", "Henry Luce", "Henry Babbage", "Charles Luce"],
     correct: "Charles Babbage",
@@ -57,14 +99,14 @@ nextBtn.addEventListener(
       scoreContainer.classList.remove("hide");
       //user score
       userScore.innerHTML =
-        "Your score is " + scoreCount + " out of " + questionCount;
+        "Sua pontuação é : " + scoreCount + " de " + questionCount;
     } else {
       //display questionCount
       countOfQuestion.innerHTML =
-        questionCount + 1 + " of " + quizArray.length + " Question";
+        questionCount + 1 + " de " + quizArray.length + " Questões";
       //display quiz
       quizDisplay(questionCount);
-      count = 11;
+      count = 60 ;
       clearInterval(countdown);
       timerDisplay();
     }
@@ -157,7 +199,7 @@ function initial() {
   quizContainer.innerHTML = "";
   questionCount = 0;
   scoreCount = 0;
-  count = 11;
+  count = 60;
   clearInterval(countdown);
   timerDisplay();
   quizCreator();
