@@ -1,3 +1,11 @@
+:root {
+    --color-primary: #00ae9d;
+    --color-secondary: #003641;
+    --color-white: #ffffff;
+    --color-purple: #49479d;
+    --color-green-medium: #7db61c;
+    --color-green-light: #c9d200;
+  }
 * {
     padding: 0;
     margin: 0;
@@ -5,7 +13,7 @@
     font-family: "Poppins", sans-serif;
   }
   body {
-    background-color: #0a69ed;
+    background-color: var(--color-primary);
   }
   .start-screen,
   .score-container {
@@ -22,12 +30,25 @@
     border: none;
     outline: none;
     cursor: pointer;
+    font-weight: bold;
+  }
+
+  button:hover {
+    transition: 0.6s;
   }
   #start-button,
   #restart {
     font-size: 1.3em;
     padding: 0.5em 1.8em;
     border-radius: 0.2em;
+    background-color: var(--color-purple);
+    color: var(--color-white);
+  }
+  #start-button:hover{
+    color:#c0bfd2;
+  }
+  #restart:hover{
+    color: #c0bfd2;
   }
   #restart {
     margin-top: 0.9em;
@@ -83,11 +104,14 @@
   #next-button {
     font-size: 1em;
     margin-top: 1.5em;
-    background-color: #0a69ed;
+    background-color: var(--color-secondary);
     color: #ffffff;
     padding: 0.7em 1.8em;
     border-radius: 0.3em;
     float: right;
+  }
+  #next-button:hover{
+    color: #c0bfd2;
   }
   .hide {
     display: none;
@@ -106,3 +130,32 @@
     font-size: 1.5em;
     color: #ffffff;
   }
+.infos {
+    margin: 2rem;
+    text-align: center;
+}
+.infos h1 {
+    font-size: 4rem;
+    color: var(--color-purple);
+}
+.infos p {
+  font-size: 1.4rem;
+  color: var(--color-secondary);
+  font-weight: bold;
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    margin: 2rem;
+    /* width: 30vw; */
+}
+.login input {
+ height: 4vh;
+ text-align: center;
+ width: 35vh;
+}
+
+#clock {
+    height: 2rem;
+}
