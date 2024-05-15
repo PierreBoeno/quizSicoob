@@ -113,7 +113,7 @@ const quizArray = [
       "Devo desconfiar sempre que pedirem meus dados pessoais, códigos, senhas ou pagamentos.",
       "Todas as alternativas estão corretas.",
     ],
-    correct: "Todas as alternativas estão corretas.e",
+    correct: "Todas as alternativas estão corretas.",
   },
   {
     id: "8",
